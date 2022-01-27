@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="slider1.png" type="image/png">
+    <title>myPortfolio-About</title>
+    <link rel="stylesheet" type="text/css" href="doc/style.css">
+    <style>
+        #services {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 450px;
+            border: 1px solid black;
+            margin: 10px;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to top, rgb(255, 45, 45) 50%, white);
+            background-size: 100% 200%;
+            transition: all .8s;
+        }
+
+            .box:hover {
+                background-position: left bottom;
+                color: white;
+                border: none;
+                box-shadow: 0 0 20px rgb(255, 45, 45);
+            }
+
+            .box img {
+                width: 80px;
+                height: 80px;
+                background-color: white;
+                padding: 10px;
+            }
+    </style>
+</head>
+<body>
+    <!-- header part-->
+    <!-- 1 head part-->
+
+    <div class="head">
+        <img src="doc/map.png"> <span>  Nairobi,Kenya </span>
+        <img src="doc/email.png"><span> henrymberere@gmail.com</span>
+        <div style="text-align-last: right; padding-right: 5px;">Opening hours: Working Days</div>
+        <!--1 header part ends-->
+        <!--2  header part begins-->
+    </div>
+
+    <div class="help">
+        <img class="img" style="padding-top: 10px; height: 49px; padding-right: 200px;" src="doc/log.jpg"> <img class="img" src="doc/man.png" alt="icon" height="50px"><p style="padding-right: 10px;">  Need help?call me +254742607765</p><br>
+        <div class="button">
+            <a class="a" href="https://api.whatsapp.com/send?phone=254742607765&text=Hi%20Henry%20,%20i%20want%20to%20know%20more%20about%20your%20service%20.%20My%20name%20is..."><center>	WhatsApp</center> </a>
+        </div>
+    </div>
+
+
+    <hr>
+    <!-- content part begins-->
+    <div class="row">
+        <div class="nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="#">Services</a>
+            <a href="index.html">Projects</a>
+            <a href="profile.html">MyProfile</a><i style="padding-right: 0px;">.</i>
+            <marquee class="mac">life of a programmer</marquee>
+        </div>
+    </div>
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="<a href="doc/web.png" title="design icons"></a>
+                <h1 class="headings">Website Design</h1>
+                <p>
+                    Being a web developer I have been in the state of developing and designing websites of different  kinds be it business manangement,
+                    database linked websites, personal websites and many more as you can observe from this you are currrently browsing.
+                </p>
+            </div>
+            <div class="box">
+                <img src="<a href=" doc /ux.png" title="ux icons"></a>
+                <h1 class="headings">UX/UI <br> Design</h1>
+                <p>
+                    I do develop User Interface and
+                    design it on how you as the user should interact with it and also a UX to emphasize on your usage as the user
+                    and I also make sure that these interfaces work in a lovely manner.
+                </p>
+            </div>
+            <div class="box">
+                <img src="<a href="doc/android.png" title="app icons"></a>
+                <h1 class="headings">Android Development</h1>
+                <p>
+                    By use of my skills in Java programming I do develop well designed android applications which are capable
+                    of functioning in almost 98.5% of devices found in the market by use of API 30.0
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
+    <footer>
+        <h4>leave your comment below</h4>
+        <br>
+        <form name="About" data-netlify="true">
+            <nav>
+                <input type="text" name="name " placeholder="name" required=""><br>
+                <br>
+                <input type="email" name="mail" placeholder="email"><br><br>
+                <textarea style="width: 50%;" placeholder="your text here"></textarea><br>
+                <center><input onsubmit ="sub()" class="submit" type="submit" name="submit"></center>
+
+                <script type="text/javascript">
+                    function sub() {
+                        alert("successful");
+                    }
+
+                </script>
+            </nav>
+        </form>
+        <span>Follow me: </span>
+
+        <a href="http://www.facebook.com/henry.mathara.3">
+            <img class="icon" src="doc/Facebook-icon.png">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=254742607765">
+            <img class="icon" src="doc/Whatsapp-icon.jpg">
+        </a>
+        <a href="https://www.instagram.com/henry_mathara/">
+            <img class="icon" src="doc/insta-icon.jpg">
+        </a>
+        <br><br>
+
+        <div class="nav">
+            <a href="about.html"><img width="20px" height="20px" src="doc/	man.png">About me</a>
+            <a href="project.html"><img width="16px" height="20px" src="doc/	expert.png">My Projects</a>
+            <a href="contact.html"><img src="doc/call.png">+254 742 607 765</a>
+        </div>
+        <center>&copy Henry 2021</center>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
